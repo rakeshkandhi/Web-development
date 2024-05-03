@@ -13,3 +13,4 @@ While JSX resembles HTML syntax, it's important to note that JSX is not HTML. JS
 ## JSX Expressions
 
 JSX expressions can be embedded within curly braces `{}` to evaluate JavaScript expressions and variables within JSX code.
+

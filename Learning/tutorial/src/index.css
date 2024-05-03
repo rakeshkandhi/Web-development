@@ -1,0 +1,30 @@
+.student {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  padding: 10px;
+  border: 1px solid hsla(0, 0%, 50%, 0.1);
+}
+
+.student p {
+  margin: 0;
+}
+
+
+.welcome-message {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  padding: 10px;
+  background-color: hsl(120, 100%, 42%);
+  color: white;
+  border-radius: 5px;
+  margin: 0;
+}
+.login-prompt{
+    font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  padding: 10px;
+  background-color: hsl(0, 94%, 48%);
+  color: white;
+  border-radius: 5px;
+  margin: 0;
+}
