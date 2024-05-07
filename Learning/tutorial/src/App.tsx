@@ -1,10 +1,9 @@
 import React from "react";
-import UserGreeting from "./components/UserGreeting";
-
-const App: React.FC = () => {
+import Clickme from "./Hooks/UseRef/Clickme";
+export const App: React.FC = () => {
   return (
     <>
-      <UserGreeting isLoggedIn={true} username="Rakesh kandhi" />
+      <Clickme />
     </>
   );
 };

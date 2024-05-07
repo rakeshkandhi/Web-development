@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .student {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2em;
@@ -9,7 +15,6 @@
   margin: 0;
 }
 
-
 .welcome-message {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2em;
@@ -19,12 +24,33 @@
   border-radius: 5px;
   margin: 0;
 }
-.login-prompt{
-    font-family: Arial, Helvetica, sans-serif;
+.login-prompt {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 2em;
   padding: 10px;
   background-color: hsl(0, 94%, 48%);
   color: white;
   border-radius: 5px;
   margin: 0;
+}
+
+.counter {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  padding: 10px;
+  max-width: max-content;
+  background-color: hsl(0, 8%, 43%);
+  color: white;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.counter .btn {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0;
+  cursor: pointer;
+  margin-right: 10px;
+  border: 1px solid hsla(0, 0%, 50%, 0.1);
 }
