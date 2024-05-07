@@ -1,9 +1,9 @@
 import React from "react";
-
+import Parent from "./Data_passing/Parent";
 const App: React.FC = () => {
   return (
     <div>
-      <h1>Hello</h1>
+      <Parent />
     </div>
   );
 };
