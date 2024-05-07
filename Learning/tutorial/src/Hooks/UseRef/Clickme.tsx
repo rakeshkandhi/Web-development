@@ -9,7 +9,11 @@ const Clickme: React.FC = () => {
   }
 console.log(ref.current);
 
-  return <button onClick={handleClick}>Click me!</button>;
+  return (
+    <button type="button" className="btn" onClick={handleClick}>
+      Click me!
+    </button>
+  );
 };
 
 export default Clickme;
