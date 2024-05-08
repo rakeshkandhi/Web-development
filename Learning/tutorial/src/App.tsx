@@ -1,11 +1,8 @@
 import React from "react";
-import { Demo } from "./Hooks/UseContext/Demo";
+import Demo from "./Hooks/UseTransition/Demo";
+
 const App: React.FC = () => {
-  return (
-    <div>
-      <Demo />
-    </div>
-  );
+  return <Demo />;
 };
 
 export default App;
