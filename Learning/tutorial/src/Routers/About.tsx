@@ -6,10 +6,7 @@ const About: React.FC = () => {
       <h1>About Us</h1>
       <p>This is our About Us page.</p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-        maxime veniam, eaque sequi soluta nam ab nesciunt quos eius vel optio.
-        Nulla dolores illo consequuntur. Deleniti corrupti praesentium rerum
-        rem!
+        Here you can write about the company.
       </p>
     </div>
   );

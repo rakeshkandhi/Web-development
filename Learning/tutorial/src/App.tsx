@@ -1,8 +1,7 @@
 import React from "react";
-import Demo from "./Hooks/UseTransition/Demo";
-
+import RouterDemo from "./Routers/RouterDemo";
 const App: React.FC = () => {
-  return <Demo />;
+  return <RouterDemo />;
 };
 
 export default App;
