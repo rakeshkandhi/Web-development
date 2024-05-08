@@ -1,9 +1,9 @@
 import React from "react";
-import Parent from "./Data_passing/Parent";
+import { Demo } from "./Hooks/UseContext/Demo";
 const App: React.FC = () => {
   return (
     <div>
-      <Parent />
+      <Demo />
     </div>
   );
 };

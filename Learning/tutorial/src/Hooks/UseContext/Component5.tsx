@@ -18,14 +18,15 @@ const Component5: React.FC = () => {
       <h2>{`Hello ${user} again!`}</h2>
       <form onSubmit={handleSubmit}>
         <input
+          className="btn"
           type="text"
           value={newName}
           onChange={(e) => setNewName(e.target.value)}
           placeholder="Enter new name"
         />
-        <button type="submit">Update Name</button>
+        <button className="btn" type="submit">Update Name</button>
       </form>
-      <button onClick={toggleTheme}>Toggle Theme</button>
+      <button className="btn" onClick={toggleTheme}>Toggle Theme</button>
       <p>Current theme: {theme}</p>
     </>
   );

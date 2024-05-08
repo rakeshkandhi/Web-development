@@ -11,7 +11,7 @@ interface State {
 interface FieldAction {
   type: "login" | "success" | "error" | "logOut" | "field";
   payload?: string;
-  fieldName?: string|any ;
+  fieldName?: string ;
 }
 
 function loginReducer(state: State, action: FieldAction) {
@@ -19,7 +19,7 @@ function loginReducer(state: State, action: FieldAction) {
     case "field": {
       return {
         ...state,
-        [action.fieldName]: action.payload,
+        [action.fieldName!]: action.payload,
       };
     }
     case "login": {
