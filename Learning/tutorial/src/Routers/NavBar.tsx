@@ -41,6 +41,11 @@ const NavBar: React.FC = () => {
               Products
             </NavLink>
           </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/user">
+              Users
+            </NavLink>
+          </li>
         </ul>
       </div>
     </nav>

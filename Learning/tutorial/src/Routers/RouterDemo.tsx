@@ -9,6 +9,9 @@ import PathNotFound from "./PathNotFound";
 import Products from "./Products/Products";
 import FeaturedProducts from "./Products/FeaturedProducts";
 import NewProducts from "./Products/NewProducts";
+import Users from "./Users/Users";
+import UserDetails from "./Users/UserDetails";
+import Admin from "./Admin";
 
 export const RouterDemo: React.FC = () => {
   return (
@@ -24,6 +27,11 @@ export const RouterDemo: React.FC = () => {
             <Route index element={<FeaturedProducts />} />
             <Route path="featured" element={<FeaturedProducts />} />
             <Route path="new" element={<NewProducts />} />
+          </Route>
+          <Route path="user" element={<Users />}>
+            <Route index element={<UserDetails />} />
+            <Route path=":userId" element={<UserDetails />} />
+            <Route path="admin" element={<Admin />} />
           </Route>
           <Route path="*" element={<PathNotFound />} />
         </Routes>
