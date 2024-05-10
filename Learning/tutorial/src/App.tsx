@@ -1,9 +1,10 @@
 import React from "react";
-import UseMemoDemo from "./Hooks/UseMemo/UseMemoDemo";
+import FetchDemo from "./APIs/FetchDemo";
+
 const App: React.FC = () => {
   return (
     <div>
-      <UseMemoDemo />
+      <FetchDemo />
     </div>
   );
 };
