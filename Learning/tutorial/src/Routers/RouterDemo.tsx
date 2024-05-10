@@ -12,6 +12,7 @@ import NewProducts from "./Products/NewProducts";
 import Users from "./Users/Users";
 import UserDetails from "./Users/UserDetails";
 import Admin from "./Admin";
+import FetchDemo from "../APIs/FetchDemo";
 
 export const RouterDemo: React.FC = () => {
   return (
@@ -34,6 +35,7 @@ export const RouterDemo: React.FC = () => {
             <Route path="admin" element={<Admin />} />
           </Route>
           <Route path="*" element={<PathNotFound />} />
+          <Route path="note" element={<FetchDemo />} />
         </Routes>
       </Router>
     </>

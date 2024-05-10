@@ -1,10 +1,10 @@
 import React from "react";
-import FetchDemo from "./APIs/FetchDemo";
+import RouterDemo from "./Routers/RouterDemo";
 
 const App: React.FC = () => {
   return (
     <div>
-      <FetchDemo />
+      <RouterDemo />
     </div>
   );
 };
