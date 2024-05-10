@@ -1,9 +1,9 @@
 import React from "react";
-import Component1 from "./Hooks/UseContext/Props drilling/Component1";
+import UseMemoDemo from "./Hooks/UseMemo/UseMemoDemo";
 const App: React.FC = () => {
   return (
     <div>
-      <Component1 />
+      <UseMemoDemo />
     </div>
   );
 };
