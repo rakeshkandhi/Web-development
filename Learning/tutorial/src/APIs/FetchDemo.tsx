@@ -19,7 +19,7 @@ export const FetchDemo: React.FC = () => {
         },
       });
       const { data } = response;
-      console.log(`Returned with status code ${response.status}`);
+      console.log(`From getAllNotes: Returned with status code ${response.status}`);
       setNotes(data);
     } catch (error) {
       console.error("Error fetching notes:", error);
@@ -34,11 +34,9 @@ export const FetchDemo: React.FC = () => {
     try {
       const response = await axios.post(
         "http://localhost:3001/todo",
-        // json data
         {
           content: payload,
         },
-        // headers and content type
         {
           headers: {
             "Content-Type": "application/json; charset=utf-8",
@@ -80,43 +78,7 @@ export const FetchDemo: React.FC = () => {
     }
     getAllNotes();
   }
-  {
-    /*
-  <input
-        type="text"
-        value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
-      />
-      <button onClick={saveNote}>Add Note</button>
-      <ul>
-        {notes.length == 0 && <li>No notes</li>}{" "}
-        {notes.map((note) => (
-          <li key={note.id}>
-            {editId === note.id ? (
-              <>
-                <input
-                  type="text"
-                  value={inputValue}
-                  onChange={(e) => setInputValue(e.target.value)}
-                />
-                <button
-                  onClick={() => updateNote(note.id, { content: inputValue })}
-                >
-                  Update
-                </button>
-              </>
-            ) : (
-              <>
-                {note.content}
-                <button onClick={() => deleteNote(note.id)}>Delete</button>
-                <button onClick={() => setEditId(note.id)}>Edit</button>
-              </>
-            )}
-          </li>
-        ))}
-      </ul>
-      */
-  }
+
   return (
     <div>
       <h1>Notes App with Axios</h1>
@@ -124,15 +86,22 @@ export const FetchDemo: React.FC = () => {
         className="input-group mb-3"
         style={{ display: "flex", flexDirection: "column" }}
       >
-        <AddNote onSave={saveNote} />
+        <AddNote input={inputValue} onSave={saveNote} saveInput={setInputValue} />
         <ul>
           {notes.length == 0 ? (
             <li>No notes....</li>
           ) : (
             notes.map((note, index) => {
-              return <li key={index}>
-                <Notes id={note.id} content={note.content} deleteFunc={deleteNote} updateFunc={updateNote}/>;
+              return (
+                <li key={index}>
+                  <Notes
+                    id={Number(note.id)}
+                    content={note.content}
+                    deleteFunc={deleteNote}
+                    updateFunc={updateNote}
+                  />
                 </li>
+              );
             })
           )}
         </ul>

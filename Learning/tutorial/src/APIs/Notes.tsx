@@ -18,19 +18,19 @@ const Notes: React.FC<NoteProps> = ({
 
   const handleEditToggle = () => {
     setEdit(!edit);
-    setUpdateContent(content); // Reset input value to original content when toggling edit mode
+    setUpdateContent(content); 
   };
 
   const handleUpdateNote = () => {
     updateFunc(id, { content: updateContent });
-    setEdit(false); // Exit edit mode after updating
+    setEdit(false); 
   };
 
   return (
     <div key={id} className="note-container">
       {!edit ? (
         <div className="note-view">
-          <h3>Content: {content}</h3>
+          <h3>{content}</h3>
           <button className="btn btn-danger" onClick={() => deleteFunc(id)}>
             Delete
           </button>

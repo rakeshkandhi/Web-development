@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 interface saveProps {
+  input: string;
+  saveInput: (inp: string) => void;
   onSave: (payload: string) => void;
 }
 
-const AddNote: React.FC<saveProps> = ({ onSave }) => {
-  const [query, setQuery] = useState<string>("");
+const AddNote: React.FC<saveProps> = ({input, onSave ,saveInput}) => {
 
   const handleclick = () => {
-    query !== "" ? onSave(query) : alert("The Content shouldn't be empty");
-    setQuery("");
+    input !== "" ? onSave(input) : alert("The Content shouldn't be empty");
+    saveInput("");
   };
   return (
     <div>
@@ -16,8 +17,8 @@ const AddNote: React.FC<saveProps> = ({ onSave }) => {
       style={{ maxWidth: "300px" }}
       className="form-control"
         type="text"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
+        value={input}
+        onChange={(e) => saveInput(e.target.value)}
       />
       <button className="btn btn-dark" onClick={handleclick}>Save</button>
     </div>
