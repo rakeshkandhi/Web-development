@@ -1,10 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import ChildProps from "./../Data_passing/ChildProps";
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
   return (
-    <div>
+    <>
       <h1>Home</h1>
       <p>This is our Home page.</p>
       <p>Home page content goes here. Be creative! and keep it simple.</p>
@@ -14,7 +15,12 @@ const Home: React.FC = () => {
       >
         Click to order
       </button>
-    </div>
+      <div>
+        <ChildProps>
+          <h1>This is the example of the child props.</h1>
+        </ChildProps>
+      </div>
+    </>
   );
 };
 

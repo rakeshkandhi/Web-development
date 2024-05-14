@@ -86,10 +86,16 @@ export const FetchDemo: React.FC = () => {
         className="input-group mb-3"
         style={{ display: "flex", flexDirection: "column" }}
       >
-        <AddNote input={inputValue} onSave={saveNote} saveInput={setInputValue} />
+        <AddNote
+          input={inputValue}
+          onSave={saveNote}
+          saveInput={setInputValue}
+        />
         <ul>
           {notes.length == 0 ? (
-            <li>No notes....</li>
+            <li>
+              <h1>No notes....</h1>
+            </li>
           ) : (
             notes.map((note, index) => {
               return (
