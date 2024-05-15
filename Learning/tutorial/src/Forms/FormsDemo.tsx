@@ -233,8 +233,8 @@ const FormsDemo: React.FC = () => {
           {error.gender && <div className="error">{error.gender}</div>}
         </div>
         <div>
-          <label>Intrests:</label>
-          <label>
+          <label style={{ marginRight: "10px" }}>Intrests: </label>
+          <label style={{ marginRight: "10px" }}>
             <input
               type="checkbox"
               name="music"
@@ -243,7 +243,7 @@ const FormsDemo: React.FC = () => {
             />
             Music
           </label>
-          <label>
+          <label style={{ marginRight: "10px" }}>
             <input
               type="checkbox"
               name="sports"
