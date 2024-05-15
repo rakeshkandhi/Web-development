@@ -1,10 +1,10 @@
 import React from "react";
-import Demo from "./Authentication/Demo";
+import FormsDemo from "./Forms/FormsDemo";
 
 const App: React.FC = () => {
   return (
     <div>
-      <Demo />
+      <FormsDemo />
     </div>
   );
 };
