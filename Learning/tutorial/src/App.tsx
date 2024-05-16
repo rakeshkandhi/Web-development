@@ -1,19 +1,13 @@
-import React, { useState } from "react";
-import Counter from "./Hooks/UseReducer/counter";
+import React from "react";
+import PaginationDemo from './Pagination/PaginationHome';
 
 const App: React.FC = () => {
-  const [input, setInput] = useState("");
-  return (
-    <div>
-      <input
-        type="number"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-        placeholder="Enter the number"
-      />
-      {input ? <Counter value={input} /> : <Counter />}
-    </div>
-  );
+return (
+  <div>
+    <PaginationDemo />
+  </div>
+);
+
 };
 
 export default App;

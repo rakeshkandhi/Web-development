@@ -63,3 +63,10 @@
 .App {
   text-align: center;
 }
+
+ul{
+  list-style: none;
+}
+th,td{
+  padding: 2px;
+}
