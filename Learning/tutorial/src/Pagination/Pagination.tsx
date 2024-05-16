@@ -28,28 +28,23 @@ const Pagination: React.FC<Props> = ({
   }
 
   const onNext = () => {
-    onPageChange(currentPage + 1);
+    onPageChange(currentPage < paginationRange.length ? currentPage + 1 : currentPage);
   };
 
   const onPrevious = () => {
-    onPageChange(currentPage - 1);
+    onPageChange(currentPage > 1 ? currentPage - 1 : 1);
   };
 
   return (
     <ul className="pagination">
-      <li onClick={onPrevious}>Prev</li>
-      {paginationRange.map((pageNumber, index) => (
-        <li
-          key={index}
-          onClick={() => onPageChange(pageNumber)}
-          className={`pagination__item ${
-            pageNumber === currentPage ? "active" : ""
-          }`}
-        >
+      <li onClick={onPrevious} aria-disabled={currentPage === 1}>Prev</li>
+      {paginationRange.map((pageNumber: number, index: number) => (
+        
+        <li key={index} onClick={() => onPageChange(pageNumber)}>
           {pageNumber === DOTS ? "..." : pageNumber}
         </li>
       ))}
-      <li onClick={onNext}>Next</li>
+      <li onClick={onNext} aria-disabled={currentPage === paginationRange.length}>Next</li>
     </ul>
   );
 };

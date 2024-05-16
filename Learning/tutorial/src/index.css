@@ -64,9 +64,38 @@
   text-align: center;
 }
 
-ul{
+ul {
   list-style: none;
 }
-th,td{
+th,
+td {
   padding: 2px;
+}
+.pagination {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination li {
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+}
+
+.pagination li:hover {
+  background-color: #f0f0f0;
+}
+
+.pagination li.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.pagination li[aria-disabled="true"] {
+  color: #ccc;
+  cursor: not-allowed;
 }

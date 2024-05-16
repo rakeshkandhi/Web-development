@@ -13,6 +13,7 @@ const PaginationDemo: React.FC = () => {
 
   return (
     <div>
+      <h1>{currentPage}</h1>
       <table border={2}>
         <thead>
           <tr>
