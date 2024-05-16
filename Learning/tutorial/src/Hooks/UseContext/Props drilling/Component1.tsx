@@ -7,7 +7,7 @@ const Component1: React.FC = () => {
     <div>
       <h1>Hello</h1>
       <Component2 username={name} setName={setName} />
-      <span>From the Component 1:{name}</span>
+      <span style={{ color: "red" }}>From the Component 1:{name}</span>
     </div>
   );
 };
