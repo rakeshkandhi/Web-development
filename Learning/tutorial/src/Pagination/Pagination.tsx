@@ -28,7 +28,9 @@ const Pagination: React.FC<Props> = ({
   }
 
   const onNext = () => {
-    onPageChange(currentPage < paginationRange.length ? currentPage + 1 : currentPage);
+    onPageChange(
+      currentPage < paginationRange.length ? currentPage + 1 : currentPage
+    );
   };
 
   const onPrevious = () => {
@@ -37,13 +39,20 @@ const Pagination: React.FC<Props> = ({
 
   return (
     <ul className="pagination">
-      <li onClick={onPrevious} aria-disabled={currentPage === 1}>Prev</li>
-      {paginationRange.map((pageNumber, index) => (
-        <li key={index} onClick={() => onPageChange(pageNumber)}>
+      <li onClick={onPrevious} aria-disabled={currentPage === 1}>
+        Prev
+      </li>
+      {paginationRange.map((pageNumber, index: number) => (
+        <li key={index} onClick={() => onPageChange(pageNumber as number)}>
           {pageNumber === DOTS ? "..." : pageNumber}
         </li>
       ))}
-      <li onClick={onNext} aria-disabled={currentPage === paginationRange.length}>Next</li>
+      <li
+        onClick={onNext}
+        aria-disabled={currentPage === paginationRange.length}
+      >
+        Next
+      </li>
     </ul>
   );
 };
