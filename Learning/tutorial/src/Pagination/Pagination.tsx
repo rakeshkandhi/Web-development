@@ -49,7 +49,7 @@ const Pagination: React.FC<Props> = ({
       ))}
       <li
         onClick={onNext}
-        aria-disabled={currentPage === paginationRange.length}
+        aria-disabled={currentPage === Math.ceil(totalCount / pageSize)}
       >
         Next
       </li>
