@@ -38,8 +38,7 @@ const Pagination: React.FC<Props> = ({
   return (
     <ul className="pagination">
       <li onClick={onPrevious} aria-disabled={currentPage === 1}>Prev</li>
-      {paginationRange.map((pageNumber: number, index: number) => (
-        
+      {paginationRange.map((pageNumber, index) => (
         <li key={index} onClick={() => onPageChange(pageNumber)}>
           {pageNumber === DOTS ? "..." : pageNumber}
         </li>

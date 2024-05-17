@@ -1,4 +1,3 @@
-import React from "react";
 import { useMemo } from "react";
 
 interface Props {
@@ -15,12 +14,12 @@ const range = (start: number, end: number): number[] => {
   return Array.from({ length }, (_, idx) => idx + start);
 };
 
-export const usePagination: React.FC<Props> = ({
+export const usePagination = ({
   totalCount,
   pageSize,
   siblingCount = 1,
   currentPage,
-}) => {
+}: Props) => {
   if (totalCount <= 0 || pageSize <= 0) {
     throw new Error("totalCount and pageSize must be positive numbers.");
   }

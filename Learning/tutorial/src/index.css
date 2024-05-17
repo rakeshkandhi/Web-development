@@ -95,6 +95,15 @@ td {
   color: #fff;
 }
 
+.pagination li.disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination li.dots {
+  cursor: default;
+}
+
 .pagination li[aria-disabled="true"] {
   color: #ccc;
   cursor: not-allowed;
