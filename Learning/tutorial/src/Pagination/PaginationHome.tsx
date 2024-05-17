@@ -37,7 +37,7 @@ const PaginationDemo: React.FC = () => {
     if (sortConfig.key === key && sortConfig.direction === "ascending") {
       direction = "descending";
     }
-        
+
     setSortConfig({ key, direction });
     setCurrentPage(1);
   };
@@ -71,7 +71,7 @@ const PaginationDemo: React.FC = () => {
           display: "flex",
           justifyContent: "center",
           overflowY: "scroll",
-          height: "600px",
+          height: "80vh",
         }}
       >
         <table border={2} style={{ width: "80%" }}>

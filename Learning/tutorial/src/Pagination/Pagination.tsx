@@ -22,6 +22,7 @@ const Pagination: React.FC<Props> = ({
     siblingCount,
     pageSize,
   });
+  const totalPageCount = Math.ceil(totalCount / pageSize);
 
   if (currentPage <= 0 || paginationRange.length <= 1) {
     return null;
@@ -29,7 +30,7 @@ const Pagination: React.FC<Props> = ({
 
   const onNext = () => {
     onPageChange(
-      currentPage < paginationRange.length ? currentPage + 1 : currentPage
+      currentPage < totalPageCount ? currentPage + 1 : currentPage
     );
   };
 
@@ -49,7 +50,7 @@ const Pagination: React.FC<Props> = ({
       ))}
       <li
         onClick={onNext}
-        aria-disabled={currentPage === Math.ceil(totalCount / pageSize)}
+        aria-disabled={currentPage === totalPageCount}
       >
         Next
       </li>
