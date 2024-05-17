@@ -82,33 +82,39 @@
    - Using context for state management
    - Creating context providers and consumers
 
-## 16. [Proxying and CORS](./Learning/markdown/proxying.md)
+## 16. [Authentication and Authorization](./Learning/markdown/auth.md)
+   - Authentication in React
+   - Authorization techniques
+   - Managing user sessions
+   - Role-based access control
+
+## 17. [Proxying and CORS](./Learning/markdown/proxying.md)
    - Proxying API requests in development
    - CORS and its implications
    - Dealing with CORS issues
 
-## 17. [Deployment](./Learning/markdown/deployment.md)
+## 18. [Deployment](./Learning/markdown/deployment.md)
    - Deploying React applications
    - Best practices for production builds
    - Hosting options (e.g., Netlify, Vercel, Heroku)
 
-## 18. [Testing React Applications](./Learning/markdown/testing.md)
+## 19. [Testing React Applications](./Learning/markdown/testing.md)
    - Unit testing with Jest
    - Testing library (e.g., React Testing Library)
    - Snapshot testing
 
-## 19. [Advanced Concepts](./Learning/markdown/advanced_concepts.md)
+## 20. [Advanced Concepts](./Learning/markdown/advanced_concepts.md)
    - Higher-order components
    - Render props
    - Refs and DOM manipulation
    - Custom hooks
+   - Dynamic importing
 
-## 20. [Performance Optimization](./Learning/markdown/performance.md)
+## 21. [Performance Optimization](./Learning/markdown/performance.md)
    - Memoization
    - React.memo
    - useMemo and useCallback hooks
    - Virtualization techniques for large lists (e.g., react-virtualized)
-
 
 # Conclusion
 
@@ -119,5 +125,3 @@ Remember that learning React is an ongoing journey, and there's always more to e
 Some great ways to apply what you've learned include starting small projects, building personal websites or applications, contributing to open-source projects, or working on a team project to collaborate with others.
 
 If you have any questions, need clarification on any topic, or want to dive deeper into specific areas, don't hesitate to reach out to the vibrant React community or consult the official React documentation.
-
-Happy coding! ✨
