@@ -29,7 +29,7 @@ const NavBar: React.FC = () => {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <NavLink className="nav-link" to="">
+              <NavLink className="nav-link" to="/home">
                 Home <span className="sr-only">(current)</span>
               </NavLink>
             </li>

@@ -1,10 +1,10 @@
 import React from "react";
-import PaginationDemo from './Pagination/PaginationHome';
+import Demo from "./Authentication/Demo";
 
 const App: React.FC = () => {
 return (
   <div>
-    <PaginationDemo />
+    <Demo />
   </div>
 );
 

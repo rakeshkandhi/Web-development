@@ -9,7 +9,6 @@ import Login from "./Login";
 import Home from "./Home";
 import Contact from "./Contact";
 import About from "./About";
-import NavBar from "./NavBar";
 
 const Demo: React.FC = () => {
 const [token, setToken] = useState<string | null>(
@@ -27,13 +26,12 @@ const [token, setToken] = useState<string | null>(
   return (
     <>
       <Router>
-        <NavBar />
         <div className="App">
           <Routes>
             <Route
               path="/"
               element={
-                token ? <Navigate to="/home" /> : <Login setToken={setToken} />
+                token ? <Navigate to="/" /> : <Login setToken={setToken} />
               }
             />
             <Route
