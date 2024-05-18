@@ -1,13 +1,12 @@
 import React from "react";
-import Clickme from "./Hooks/UseRef/Clickme";
+import ParentComponent from "./Hooks/useCallback/WithoutCallback";
 
 const App: React.FC = () => {
-return (
-  <div>
-    <Clickme />
-  </div>
-);
-
+  return (
+    <div>
+      <ParentComponent />
+    </div>
+  );
 };
 
 export default App;
