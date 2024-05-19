@@ -2,13 +2,13 @@
 
 ## Introduction to React
 
-- React is a JavaScript library for building reusable UI components. 
+- React is a JavaScript library for building reusable UI components.
 - It allows developers to build complex user interfaces by breaking them down into smaller components.
 - This component-based approach makes it easier to write and maintain code by dividing it into smaller, more manageable pieces.
-- React is open-source, which means that anyone can use it and contribute to its development. 
-- It is also a component-based library, which means that the code is organized into small, modular components that can be combined to build more complex UIs. 
+- React is open-source, which means that anyone can use it and contribute to its development.
+- It is also a component-based library, which means that the code is organized into small, modular components that can be combined to build more complex UIs.
 - This makes it easy to write and maintain code, as well as to reuse components in different parts of an application.
-- One of the key benefits of React is that it allows for a "declarative" way of specifying the UI. This means that you describe what the UI should look like, and React takes care of updating the UI based on changes to the data. This is in contrast to "imperative" programming, where you specify how the UI should be updated based on changes to the data. This declarative approach makes it easier to build complex applications without worrying about the underlying details, allowing developers to focus on building the user interface they want to see, rather than building the entire application.
+- React offers a declarative approach to UI development. React allows developers to describe the desired UI state then it handles the updates automatically. This simplifies building complex applications by abstracting away implementation details, enabling developers to focus on crafting the desired user interface rather than the intricacies of application logic.
 
 ### What is React?
 
@@ -27,7 +27,24 @@ React is a powerful tool that makes it easy to build complex applications. Here 
 3. **Better performance**: React is designed to be fast. It uses a technique called the "virtual DOM" to update the UI efficiently. This means that your application will perform well, even on slower devices.
 4. **Popular and supported**: React is a widely used technology, and there is a lot of support available. This means that there are many resources to help you learn and use React, as well as a large community of developers who can help you when you need it.
 
-Overall, React is a powerful tool that makes it easy to build complex applications. If you are just starting out with web development, I highly recommend giving React a try. It is a great way to build reusable, maintainable, and performant applications.
+Overall, React is a powerful tool that makes it easy to build complex applications. It is a great way to build reusable, maintainable, and performant applications.
+
+## Features of React:-
+
+1. **JSX (JavaScript Syntax Extension)**
+   - JSX is a combination of the HTML and Js i.e., you can embed Js objects inside the HTML elements.
+   - JSX is not supported by the browsers, as a result, Babel compiler transcompile the code into JavaScript code.
+   - Easy to read.
+
+2. **Virtual DOM**
+    - JavaScript Frameworks updates the whole DOM at once, which makes the web application slow. 
+    - But react uses virtual DOM which is an exact copy of real DOM. Whenever there is a modification in the web application, the whole virtual DOM is updated first and finds the difference between real DOM and Virtual DOM.
+3. **One-Way Data Binding**
+    - 
+4. **Performance**
+5. **Extensions**
+6. **Components**
+7. **Simplicity**
 
 ## Getting Started with React
 
