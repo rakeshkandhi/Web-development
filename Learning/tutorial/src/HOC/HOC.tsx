@@ -1,9 +1,12 @@
 import PrintHello from "./PrintHello";
 
+export const MyButton = ({ onClick }: { onClick: () => void }) => {
+  return <button onClick={onClick}>Click Me</button>;
+};
 
 const EnhancedButton = PrintHello(MyButton);
 
-const HOC = () => {
+export const HOC = () => {
   return (
     <div>
       <EnhancedButton />
