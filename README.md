@@ -20,6 +20,7 @@ To get started, clone this repository and follow the tutorials in the provided o
 ```sh
 git clone https://github.com/rakeshkandhi/Web-development.git
 cd Web-development
+cd ReactTS
 npm i
 npm run dev
 ```
@@ -81,4 +82,3 @@ Additionally, you may need the following depending on the specific tutorials you
 
 - **Database Systems**: MySQL, PostgreSQL, MongoDB (installation instructions provided in respective sections)
 - **Browser Extensions**: React Developer Tools, Redux DevTools (for front-end development)
-
