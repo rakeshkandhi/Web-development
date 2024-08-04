@@ -62,6 +62,7 @@ To get started, clone this repository and follow the tutorials in the provided o
 ```sh
 git clone https://github.com/rakeshkandhi/Web-development.git
 cd Web-development
+cd ReactTS
 npm i
 npm run dev
 ```
