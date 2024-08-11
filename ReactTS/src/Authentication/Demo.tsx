@@ -46,6 +46,8 @@ const [token, setToken] = useState<string | null>(
               path="/about"
               element={token ? <About /> : <Navigate to="/" />}
             />
+
+            <Route path="*" element={<Navigate to="/home" />} />
           </Routes>
         </div>
       </Router>

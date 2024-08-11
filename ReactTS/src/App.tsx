@@ -1,10 +1,10 @@
 import React from "react";
-import ParentComponent from "./Hooks/useCallback/WithoutCallback";
+import Demo from "./Authentication/Demo";
 
 const App: React.FC = () => {
   return (
     <div>
-      <ParentComponent />
+      <Demo />
     </div>
   );
 };
